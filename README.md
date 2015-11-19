@@ -7,6 +7,9 @@ A simple example outlining the use of Travis CI for continuous integration with 
 1. Fork this repo
 2. Go to [https://travis-ci.org/](https://travis-ci.org/) and sign-in with your GitHub credentials
 3. Enable Travis CI for the forked repo you created in step 1
+4. Make updates to the repo
+5. Commit and push your changes to trigger Travis CI to build
+6. See the results of the build at [https://travis-ci.org/](https://travis-ci.org/)
 
 ## Usage
 
