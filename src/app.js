@@ -3,5 +3,5 @@ var bar;
 var baz;
 
 function fooBar() {
-    console.log("FOOBAR");
+  console.log("FOOBAR");
 }
