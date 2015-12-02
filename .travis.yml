@@ -10,4 +10,5 @@ before_script:
   - npm install -g jscs
 
 # RUN THESE SCRIPTS (NPM TEST IS RUN BY DEFAULT)
-script: lint
+script: 
+  - npm run lint
