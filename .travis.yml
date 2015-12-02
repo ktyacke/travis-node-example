@@ -1,3 +1,13 @@
+# THIS PROJECT USES NODE.JS
 language: node_js
+
+# BUILD USING THE LATEST STABLE VERSION OF NODE
 node_js:
   - "stable"
+
+# BEFORE EXECUTING SCRIPTS, PERFORM THE FOLLOWING ACTIONS
+before_script:
+  - npm install -g jscs
+
+# RUN THESE SCRIPTS (NPM TEST IS RUN BY DEFAULT)
+script: lint
