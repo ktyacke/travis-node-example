@@ -1,6 +1,0 @@
-# THIS PROJECT USES NODE.JS
-language: node_js
-
-# BUILD USING THE LATEST STABLE VERSION OF NODE
-node_js:
-  - "stable"
