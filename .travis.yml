@@ -9,6 +9,6 @@ node_js:
 before_script:
   - npm install -g jscs
 
-# RUN THESE SCRIPTS (NPM TEST IS RUN BY DEFAULT)
+# RUN THESE SCRIPTS
 script: 
-  - npm run lint
+  - mocha
