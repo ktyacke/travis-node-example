@@ -3,7 +3,7 @@
 
 A simple example outlining the use of Travis CI for continuous integration with GitHub and Node.js
 
-## Installation
+## Usage
 
 1. Fork this repo
 2. Go to [https://travis-ci.org/](https://travis-ci.org/) and sign-in with your GitHub credentials
@@ -12,31 +12,12 @@ A simple example outlining the use of Travis CI for continuous integration with 
 5. Commit and push your changes to trigger Travis CI to build
 6. See the results of the build at [https://travis-ci.org/](https://travis-ci.org/)
 
-## Usage
-
-TODO: Write usage instructions
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 ktyacke
+Copyright (c) 2016 Kyle Tyacke
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
