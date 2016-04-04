@@ -1,6 +1,20 @@
-# THIS PROJECT USES NODE.JS
 language: node_js
 
-# BUILD USING THE LATEST STABLE VERSION OF NODE
 node_js:
-  - "stable"
+- stable
+- '5.1'
+
+before_script:
+- npm install -g jscs
+
+before_deploy:
+- npm version build
+
+deploy:
+  provider: npm
+  email: ktyacke@gmail.com
+  api_key:
+    secure: UbgTkru+oqbfEIX+/DczrSpQE1QYNrQcDfPwDGSaC8Hmpa35oRlDWmY7sWka8Py3id9HxsRMnJkRF6Bm6l7kPOtZLK2Y9FjYpmzrjgBgk32UenJk96jPD0DD2xx+L2/s/LmPysGt/cclPbLLWNVy2r7IymOXumDY86gT3wcLE54z1Cwn0J8bjWvzhz17d7ahmbxj5UnInzORFM0AzFQaKC1mTeJgOsv0QKQTMoejPBJBZW2NTWAwpmTUM2jExxHNDOn1BedB3FzGBb12ALXIDhDY9ZDxMtQNNU8fs3WuRJeD+BQW3tL742xrrvmbtO+k2uI1WvQrlioIOkFlG24ER3XeLC870kCt5ZjDSZ9bqet5x7+59A/zIW4bLHSpY7LY7QB03bngaJFVUvG8a519UFBtXdHI1lgoshBmted/lH128YqkrheJIRMitl9fGuRJ2/MhJ4dLDegWf5eZaZIEASh2Q+TmcphI0u4znbm5wrkU/dAI/wSxnxMxfUIbeZ+AFjsXwBYzeNY8oT6flTwfck0sehk76bWKNrvPkmJxMTy1sbODCPNNAZdrBX3zwgMnoZwrkvUKL/Znye3c5Tx1oIPEKPJj8Zv0tcxhsjzWfjClpKxCcjHH0a+lzGdBvlYq2qlkBguG3Fn75co2qFBDyZpx3Vk2ZmiuVGWR8NDW1tg=
+  on:
+    repo: ktyacke/travis-node-example
+
