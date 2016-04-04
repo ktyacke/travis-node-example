@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "lint": "jscs src"
   },
   "repository": {
     "type": "git",

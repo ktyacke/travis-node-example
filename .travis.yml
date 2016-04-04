@@ -9,7 +9,7 @@ before_script:
   - npm install -g jscs
 
 script:
-  - npm lint
+  - jscs src
 
 before_deploy:
   - npm version patch
