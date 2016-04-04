@@ -1,12 +1,14 @@
 language: node_js
 node_js:
 - stable
+
 before_script:
 - npm install -g jscs
-before_deploy:
-- npm version patch
 - git config --global user.email "ktyacke@gmail.com"
 - git config --global user.name "Kyle Tyacke"
+
+before_deploy:
+- npm version patch
 
 deploy:
   provider: npm
