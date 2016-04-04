@@ -4,7 +4,8 @@
   "description": "A simple example outlining the use of Travis CI for continuous integration with GitHub and Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "jscs src"
   },
   "repository": {
     "type": "git",

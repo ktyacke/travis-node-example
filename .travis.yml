@@ -8,6 +8,9 @@ before_script:
   - git config --global user.name "Kyle Tyacke"
   - npm install -g jscs
 
+script:
+  - npm lint
+
 before_deploy:
   - npm version patch
 
