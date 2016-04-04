@@ -1,4 +1,5 @@
 {
     "validateIndentation": 4,
-    "requireSemicolons": true
+    "requireSemicolons": true,
+    "fix": true
 }
