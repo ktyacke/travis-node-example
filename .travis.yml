@@ -23,9 +23,16 @@ deploy:
     repo: ktyacke/travis-node-example
 
 notifications:
+  email:
+    recipients:
+      - ktyacke@gmail.com
+    on_success: always
+    on_failure: always
+
   slack:
+    rooms:
+      - secure: nBGlmJLAMIc7hACv7+lXlx5UEY0DzvHOUsCDSCzEpvWA41uINkojeKgAjFs1w+nvFEF2ZdhJu2dUXs28guR49qOs0HKBFzjdANlp1YGqz7p+QpQbxGhWdpe8J78+BYz/Axtae2KVfTHjPk+32LZAa2y0Znnv8D7KusjChmDhS0y04g2W5dDGGa8yCFBXrodxZ47cy51ZJo0q+dUUh75tRN1LUpIdtprWpmb9PrxrFtF5pKRTbOu1+r9TtuLDY5TB5BlsAWO34ewioZfdGg2iOdLR1xfq9oCIN8lK+hEFwccj15Olx6HvyGD0q3mrn+jVYUfNpBi/3vInXVaaNdQUl4lH9By+0ixII6x9QjuIEJ83OqboY5289uBvi9YfhiDeTSKJVVygElFrPbEaYmHtPghdJAWpmROcbCHaRPdzy0A0uVSwNPqfRBwmmI5GK6f8o25pG93iJr+foLvoGN2ZE94YwXVT/jKa9QpOX9lcEGr746fKYwyC6inDp4/fVl7C1NYoyzwErPHYVqrBzvNSAfYhczH7ra5BxgZvlWYTNQhspHB2o5NCchxAWW36FLjPnZAg8bX/0b0jnLBLAZt+AyussgI+nfGgYncPWYOiTOnpaG19V9mtqYjSkvf+nMP6rCiElq1FR1xJ+VFPOW4jkbRikInlFhMA7snKpwx7w8w=
     on_success: always
     on_failure: always
     on_start: always
-    on_pull_requests: true
-    secure: s0QcUOb/9yAFgbiAh3Ik8rlI0w5hebssQum9NiOnAsapM9r5uYCdyN/AA2kEwi6R0fp0aXHAMaf0t2zRBSpGUjaXjuo1ZeidG1Ik9Qib9l1A8168k29MqC7UkfbM7C1Jbkxpsm+w9Ul0ehmCROW0gEMw0aNTnwf8ELgKwsgQI12MzKVpzTZQR+RcT+Ia59KfhaSdyGSCSASeVWJEmNv6RR/LIEYfabvoUmRlimD3MQrK41QH77cddfY3kDCmV17Rc+kSNIXraddnMDIlWfCTr26sBavLq1OELSW7NZvEw2AxPpIK9Hx8k8GrCCBP45e0mb+wRMh/mVenVMq+taiOVPP8gogo08hiqCYC1fcZGYjv3XQvm9GweNrl2D9JIbOWSbpwOr7/c7w4QJeBxwKAJiyR9Dd7iVBtXhIMnT710AAgHCAsdHYN2FDn1mMeGx1MZKVrD6TJvafwRrqDsEfsC2+cvaXSlgyV2vwCqHWcPmXVzbDsm9e45nLRh11v21uKk+bgvucU9UvyxIcfbKQL50amhtYPGsf4cmrtqrSdjZVBXqrWwcu/gjSNATowG9xOvfUanaH5O4ijd5f5YHBQwHCmmOXnpuUPfiiYgM6sGoRmrnXkNiKejP33Xr7/EsgZvE9xdueM/iL9LRgTQmdahVcyEYnbBAGuBOLEuLJlk5I=
+  
