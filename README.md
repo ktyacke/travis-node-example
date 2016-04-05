@@ -1,5 +1,5 @@
-# Travis CI Node Example
-https://docs.travis-ci.com/
+# Travis CI Node Example [![Build Status](https://travis-ci.org/ktyacke/travis-node-example.svg?branch=master)](https://travis-ci.org/ktyacke/travis-node-example)
+
 A simple example outlining the use of Travis CI for continuous integration with GitHub and Node.js
 
 ## Usage
