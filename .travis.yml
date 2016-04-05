@@ -3,10 +3,15 @@ language: node_js
 node_js:
   - stable
 
+services:
+  - couchdb
+
 before_script:
   - git config --global user.email "ktyacke@gmail.com"
   - git config --global user.name "Kyle Tyacke"
   - npm install -g jscs
+  - curl -X PUT localhost:5984/travis-node-demo
+  - curl -X GET http://127.0.0.1:5984/_all_dbs
 
 script:
   - jscs src
