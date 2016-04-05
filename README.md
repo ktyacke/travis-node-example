@@ -1,6 +1,5 @@
 # Travis CI Node Example
-[![Build Status](https://travis-ci.org/ktyacke/travis-node-example.svg?branch=master)](https://travis-ci.org/ktyacke/travis-node-example)
-
+https://docs.travis-ci.com/
 A simple example outlining the use of Travis CI for continuous integration with GitHub and Node.js
 
 ## Usage
@@ -11,6 +10,12 @@ A simple example outlining the use of Travis CI for continuous integration with 
 4. Make updates to the repo
 5. Commit and push your changes to trigger Travis CI to build
 6. See the results of the build at [https://travis-ci.org/](https://travis-ci.org/)
+
+## Recommended Reading
+
+1. [Martin Fowler - Continuous Integration](http://www.martinfowler.com/articles/continuousIntegration.html)
+2. [Travis-CI Documentation](https://docs.travis-ci.com/)
+3. [Continuous Delivery Visualizations](http://continuousdelivery.com/2014/02/visualizations-of-continuous-delivery/)
 
 
 ## License
