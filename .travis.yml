@@ -6,5 +6,7 @@ node_js:
 before_script:
   - npm install -g jscs
 
+script: mocha
+
 script:
   - jscs src
