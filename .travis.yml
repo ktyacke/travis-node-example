@@ -7,9 +7,23 @@ services:
   - couchdb
 
 before_script:
+  - git config --global user.email "ktyacke@gmail.com"
+  - git config --global user.name "Kyle Tyacke"
   - npm install -g jscs
   - curl -X PUT http://127.0.0.1:5984/travis-node-demo
   - curl -X GET http://127.0.0.1:5984/_all_dbs
 
 script:
   - jscs src
+
+before_deploy:
+  - npm version patch
+
+deploy:
+  provider: npm
+  email: ktyacke@gmail.com
+  api_key:
+    secure: dsGLSutR6PLAWc0iXsm9E43RLfSziaShvcLOPxiAg6yPrTYIQBBr04q8uOxCh7onfm+2b/WIoAazwiPpR2Dt8PHPJQP3q2B8KxjD8EJXYAAKTAW78fdd3QnUchHUatYCcH1JQBiFwvuiU2Za2jnZ3jzQxUyoMU/eshCBPWJ8MtrazrNjhRvMnZi8xY+QO3NFCGwxSclCm0e6170r2PEvBfVhofXHYKPIMj7fFPzoHZqqFMbcZPNsMZoPYAj58EZ1tmgLGvQW+MBcVGFsDREbeqFCt37sRvQwnEyHhOrsBfshQjPDyh4RFgGncJotIPli52JS49Z+3Dhzt7wjWSLpdsS8nQJS8IwNDf+RCFGgL7nP5KnV/1Vs7GDzrX+PS9dpUZ3uALslYUo6M59pmAaxx1R1dECQDEJHkwz+EAbaRzsm+jeTL6dohxDnBrF3QMq/JZipC/a+pwtQ436Q4uNg8ctKD1WRItbBGbgOTmKAm1lfhe4R59BrCZKoF0f55rsPAqAS2N+KNy8YW9lG1UU7JUjasisqc9+E3qxcYMzya+zoa2Gmruk1uXVGq2VVriSgkymTRif6RsYr3PNRMDk0gNPGQORK1Y1xw3qROZmRABiT6Y1KltgURumVzqU+qSbOevidEsvKuar3DlOalRcIQeOlXPYRYZuwA7VhW8eanes=
+  on:
+    repo: ktyacke/travis-node-example
+    branch: master
