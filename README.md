@@ -1,5 +1,5 @@
-# Travis CI Node Example
-https://docs.travis-ci.com/
+# Travis CI Node Example [![Build Status](https://travis-ci.org/ktyacke/travis-node-example.svg?branch=master)](https://travis-ci.org/ktyacke/travis-node-example)
+
 A simple example outlining the use of Travis CI for continuous integration with GitHub and Node.js
 
 ## Usage
@@ -17,6 +17,10 @@ A simple example outlining the use of Travis CI for continuous integration with 
 2. [Travis-CI Documentation](https://docs.travis-ci.com/)
 3. [Continuous Delivery Visualizations](http://continuousdelivery.com/2014/02/visualizations-of-continuous-delivery/)
 
+## Presentation
+
+The presentation associated with this repository can be found at:
+[https://slides.com/kyletyacke/travis-ci/](https://slides.com/kyletyacke/travis-ci/)
 
 ## License
 
