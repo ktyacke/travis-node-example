@@ -26,3 +26,4 @@ deploy:
     tags: true
     repo: ktyacke/travis-node-example
     all_branches: true
+
