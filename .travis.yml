@@ -6,4 +6,4 @@ node_js:
   - "stable"
 
 # RUN OUR TESTS BY CALLING MOCHA 
-script: mocha
+script: mocha 
