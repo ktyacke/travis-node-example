@@ -5,3 +5,5 @@ language: node_js
 node_js:
   - "stable"
 
+# RUN OUR TESTS BY CALLING MOCHA 
+script: mocha
