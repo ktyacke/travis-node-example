@@ -7,3 +7,4 @@ node_js:
 
 # RUN OUR TESTS BY CALLING MOCHA 
 script: mocha
+
