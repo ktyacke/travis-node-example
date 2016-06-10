@@ -1,21 +1,16 @@
 language: node_js
-
 node_js:
-  - stable
-
+- stable
 services:
-  - couchdb
-
+- couchdb
 before_script:
-  - git config --global user.email "ktyacke@gmail.com"
-  - git config --global user.name "Kyle Tyacke"
-  - npm install -g jscs
-  - curl -X PUT http://127.0.0.1:5984/travis-node-demo
-  - curl -X GET http://127.0.0.1:5984/_all_dbs
-
+- git config --global user.email "ktyacke@gmail.com"
+- git config --global user.name "Kyle Tyacke"
+- npm install -g jscs
+- curl -X PUT http://127.0.0.1:5984/travis-node-demo
+- curl -X GET http://127.0.0.1:5984/_all_dbs
 script:
-  - jscs src
-
+- jscs src
 deploy:
   provider: npm
   email: ktyacke@gmail.com
@@ -25,17 +20,11 @@ deploy:
     tags: true
     repo: ktyacke/travis-node-example
     all_branches: true
-
 notifications:
   email:
     recipients:
-      - ktyacke@gmail.com
+    - ktyacke@gmail.com
     on_success: always
     on_failure: always
-
   slack:
-    rooms:
-      - secure: nBGlmJLAMIc7hACv7+lXlx5UEY0DzvHOUsCDSCzEpvWA41uINkojeKgAjFs1w+nvFEF2ZdhJu2dUXs28guR49qOs0HKBFzjdANlp1YGqz7p+QpQbxGhWdpe8J78+BYz/Axtae2KVfTHjPk+32LZAa2y0Znnv8D7KusjChmDhS0y04g2W5dDGGa8yCFBXrodxZ47cy51ZJo0q+dUUh75tRN1LUpIdtprWpmb9PrxrFtF5pKRTbOu1+r9TtuLDY5TB5BlsAWO34ewioZfdGg2iOdLR1xfq9oCIN8lK+hEFwccj15Olx6HvyGD0q3mrn+jVYUfNpBi/3vInXVaaNdQUl4lH9By+0ixII6x9QjuIEJ83OqboY5289uBvi9YfhiDeTSKJVVygElFrPbEaYmHtPghdJAWpmROcbCHaRPdzy0A0uVSwNPqfRBwmmI5GK6f8o25pG93iJr+foLvoGN2ZE94YwXVT/jKa9QpOX9lcEGr746fKYwyC6inDp4/fVl7C1NYoyzwErPHYVqrBzvNSAfYhczH7ra5BxgZvlWYTNQhspHB2o5NCchxAWW36FLjPnZAg8bX/0b0jnLBLAZt+AyussgI+nfGgYncPWYOiTOnpaG19V9mtqYjSkvf+nMP6rCiElq1FR1xJ+VFPOW4jkbRikInlFhMA7snKpwx7w8w=
-    on_success: always
-    on_failure: always
-    on_start: always
+    secure: G1rjfmNYfCvZV84T17V/yYpSX0wBGcoHQyIbrqCgoJKFpYql07VSBR7JlFLHVfAPT4sViC12ifI59sKFSf5M0+zb7EM6VktqsYX03jn9JiSOV9OlwP+24gNhQ3m5eqqwYbaD9/vSiy6nn+5Io8sl6tZ5UBKmPqLH1xuUnF2OO48oOVjqNJ3adQlwUh6EzY4sF5kgg4luQbRJhgKahJFTJ42saz/rGHPy+XqeivE3zQyLV0yMasURZG8AarajNAIB05QbE9hRX2TA7i5KJa8BJHK5GqUrxVDHw2bT3FB7txd2h6AbO3hPYluo95F6AbNwZmmNMPLkNxDAzG2qXjDatp/aT9g1+Ncyd5pZaTuhPK1Q5k7vOUoJOmYvnkaG7UQkR4GP65qGJNPKkr9RzaLzcvOFZrtbPfmiardeTAuPF6YujydeRH8mao6+o7BimXTydEvXqptOGzCqmvVwAFsPTc9eT9OIRYNmhj8ckdYHgfzUJbTs0MBEP3xPj4JaCBMPgG+rRjNqcWq0pbaMysklFJgAn7AfxljFqSsOWcu0YqbwoTCuJjESYp96RUL/Ky2lQlDA/Ot0Yd1lUZ5i9HW7Z3GyUNE9g18tnedefRnJ3i345i0min7DqPLZBafpBrVhQPbjOO3REfO/KG/eC6i0zbLXsf37iYIL+lXBgMXwTR4=
