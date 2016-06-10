@@ -1,4 +1,4 @@
 module.exports.sayHello = function (name) {
-    return "Hello " + name + "."
+      return "Hello " + name + "."
 };
 
