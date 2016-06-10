@@ -29,7 +29,7 @@ deploy:
   on:
     tags: false
     repo: ktyacke/travis-node-example
-    all_branches: true
+    all_branches: true 
 
 after_deploy:
   - npm version
