@@ -7,5 +7,5 @@ before_script:
   - npm install -g jscs
 
 script: 
-  - jscs src
+  - jscs src 
   - mocha
