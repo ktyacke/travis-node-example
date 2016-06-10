@@ -1,6 +1,6 @@
 {
   "name": "travis-node-example",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple example outlining the use of Travis CI for continuous integration with GitHub and Node.js",
   "main": "index.js",
   "scripts": {},
