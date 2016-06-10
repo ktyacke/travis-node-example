@@ -18,7 +18,8 @@ script:
   - mocha
 
 before_deploy:
-  - npm version patch && echo "version now at %s"
+  - echo npm version
+  - npm version patch
 
 deploy:
   provider: npm
@@ -29,4 +30,7 @@ deploy:
     tags: false
     repo: ktyacke/travis-node-example
     all_branches: true
+
+  after_deploy:
+    - echo npm version
 
