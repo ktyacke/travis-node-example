@@ -17,6 +17,9 @@ script:
   - jscs src
   - mocha
 
+before_deploy:
+  - npm version patch
+
 deploy:
   provider: npm
   email: ktyacke@gmail.com
